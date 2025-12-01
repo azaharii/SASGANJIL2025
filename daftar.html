@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biodata Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Biodata Siswa</h1>
+    <a href="tambah.html" class="button">Tambah Biodata</a>
+
+    <table>
+      <thead>
+        <tr>
+          
+          <th>Nama Lengkap</th>
+          <th>Jenis Kelamin</th>
+          <th>Tanggalahir</th>
+          <th>Agama</th>
+          <th>Alamat</th>
+          <th>No Telepon</th>
+          <th>Hobi</th>
+          <th>Cita-cita</th>
+          <th>Aksi</th>
+        </tr>
+        
+        <tr>
+  
+  <td>Azahari</td>
+  <td>Perempuan</td>
+  <td>12-04-2011</td>
+  <td>Islam</td>
+  <td>Jl. Melati No. 22</td>
+  <td>089532112345</td>
+  <td>Menyanyi</td>
+  <td>Dokter</td>
+  <td>
+    <button class="edit">Edit</button>
+    <button class="hapus">Hapus</button>
+  </td>
+</tr>
+
+<tr>
+  
+  <td>Budayata</td>
+  <td>Laki-laki</td>
+  <td>05-08-2010</td>
+  <td>Islam</td>
+  <td>Jl. Cendana No. 10</td>
+  <td>081234567890</td>
+  <td>Olahraga</td>
+  <td>Tentara</td>
+  <td>
+    <button class="edit">Edit</button>
+    <button class="hapus">Hapus</button>
+  </td>
+</tr>
+      </thead>
+
+      <tbody id="tabelData">
+        <!-- Data akan muncul dari main.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <script type="module">
+    import { tampilkanDaftar } from './main.js';
+
+
+
+    // eksekusi fungsi menampilkan biodata siswa
+    tampilkanDaftar();
+  </script>
+
+</body>
+
+</html>
